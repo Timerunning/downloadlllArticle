@@ -70,10 +70,10 @@ class ColumnDownloader:
             if not articles:
                 self.logger.warning("No articles found in the last uncollapsible list")
             else:
-                num = input("专栏下文章数量为：\n")
-                if int(num) != len(articles):
-                    self.logger.error(f"Expected {num} articles, but found {len(articles)}")
-                    return []
+                # num = input("专栏下文章数量为：\n")
+                # if int(num) != len(articles):
+                #     self.logger.error(f"Expected {num} articles, but found {len(articles)}")
+                #     return []
                 self.logger.info(f"Found {len(articles)} articles in the column")
             return articles
 
